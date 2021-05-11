@@ -1,0 +1,15 @@
+$color-main: #3f51b5;
+$color-accent: #e81919;
+$color-text: #333333;
+
+$breakpoints: (
+  "sp": "(max-width:767px)",
+  "tab": "(min-width: 768px) and (max-width: #{layout-width-inner})",
+  "pc": "(min-width: #{layout-width-inner})",
+);
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints,$breakpoint)} {
+    @content;
+  }
+}
