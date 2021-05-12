@@ -27,7 +27,7 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: grey;
 }
 
 img {
@@ -215,18 +215,43 @@ img {
   background: #fff;
   padding: 16px;
   border-radius: 4px;
+  margin-bottom: 10px;
 
-  &:not(:nth-child(3n + 1)) {
-    margin-left: 24px;
+  @include mq("pc") {
+    &:not(:nth-child(3n + 1)) {
+      margin-left: 24px;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 24px;
+    }
   }
 
-  // &:not(:nth-child(4)) {
-  //   margin-left: 24px;
-  // }
+  @include mq("tab") {
+    width: calc(50% - 24px * 1 / 2);
+
+    &:not(:nth-child(2n + 1)) {
+      margin-left: 24px;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 24px;
+    }
+  }
+
+  @include mq("sp") {
+    width: 100%;
+    margin-left: 0;
+
+    &:nth-child(n + 2) {
+      margin-top: 24px;
+    }
+  }
 }
 
 .card__img {
   img {
+    width: 100%;
   }
 }
 
