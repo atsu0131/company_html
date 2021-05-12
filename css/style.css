@@ -59,7 +59,7 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) and (max-width: layout-width-inner) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .inner {
     padding-left: 24px;
   }
@@ -80,6 +80,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
+}
+
+@media (max-width: 767px) {
+  .header__inner {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 img {
@@ -215,7 +222,7 @@ img {
   margin-bottom: 10px;
 }
 
-@media (min-width: layout-width-inner) {
+@media (min-width: 1200px) {
   .card__item:not(:nth-child(3n + 1)) {
     margin-left: 24px;
   }
@@ -224,7 +231,7 @@ img {
   }
 }
 
-@media (min-width: 768px) and (max-width: layout-width-inner) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .card__item {
     width: calc(50% - 24px * 1 / 2);
   }
@@ -239,7 +246,7 @@ img {
 @media (max-width: 767px) {
   .card__item {
     width: 100%;
-    margin-left: 0;
+    margin-right: 0;
   }
   .card__item:nth-child(n + 2) {
     margin-top: 24px;
@@ -261,5 +268,23 @@ img {
   font-weight: 700;
   line-height: 1.5;
   margin-top: 14px;
+}
+
+@media (min-width: 1200px) {
+  .card__text {
+    color: green;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .card__text {
+    color: red;
+  }
+}
+
+@media (max-width: 767px) {
+  .card__text {
+    color: blue;
+  }
 }
 /*# sourceMappingURL=style.css.map */

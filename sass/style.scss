@@ -3,18 +3,30 @@ $color-accent: #e81919;
 $color-text: #333333;
 $layout-width-inner: 1200px;
 
+// 余白
+$padding-pc: 24px;
+$padding-tab: 24px;
+$padding-sp: 16px;
+
 $breakpoints: (
   "sp": "(max-width:767px)",
-  "tab": "(min-width: 768px) and (max-width: #{layout-width-inner})",
-  "pc": "(min-width: #{layout-width-inner})",
+  "tab": "(min-width: 768px) and (max-width: #{$layout-width-inner})",
+  "pc": "(min-width: #{$layout-width-inner})",
 );
 
+// ブレークポイント
+// $breakpoints: (
+//   "sp": "(max-width: 767px)",
+//   "tab": "(max-width: #{$layout-width-inner + $padding-pc * 2 - 1px})",
+//   "pc": "(min-width: #{$layout-width-inner})",
+// );
+
+// メディアクエリー
 @mixin mq($breakpoint: sp) {
-  @media #{map-get($breakpoints,$breakpoint)} {
+  @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
 }
-
 *,
 *::before,
 *::after {
@@ -86,6 +98,11 @@ a {
   display: flex;
   align-items: center;
   height: inherit;
+
+  @include mq("sp") {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .header__logo {
@@ -241,7 +258,11 @@ img {
 
   @include mq("sp") {
     width: 100%;
-    margin-left: 0;
+    margin-right: 0;
+
+    // &:not(:nth-child(2n + 1)) {
+    //   margin-left: 0;
+    // }
 
     &:nth-child(n + 2) {
       margin-top: 24px;
@@ -266,6 +287,15 @@ img {
   font-weight: 700;
   line-height: (24/16);
   margin-top: 14px;
+  @include mq("pc") {
+    color: green;
+  }
+  @include mq("tab") {
+    color: red;
+  }
+  @include mq("sp") {
+    color: blue;
+  }
 }
 
 // 回答
