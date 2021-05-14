@@ -385,10 +385,10 @@ img {
       content: "";
       position: absolute;
       right: 0;
-      top: 0;
-      transform: translateY(-50px);
+      top: 50%;
+      transform: translateY(-50%);
       width: 4px;
-      height: 8px;
+      height: 11px;
       background: url(../img/news-arrow@2x.png) no-repeat center center / contain;
     }
   }
