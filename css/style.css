@@ -315,6 +315,10 @@ img {
   display: flex;
 }
 
+.news__item:not(:first-child) {
+  border-top: 1px solid #707070;
+}
+
 .news__meta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,5 +354,30 @@ img {
 .news__title {
   width: calc(100% - 180px);
   padding-left: 20px;
+}
+
+.news__more {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.news__more a {
+  text-decoration: none;
+  color: red;
+  font-weight: 700;
+  padding-right: 14px;
+  position: relative;
+}
+
+.news__more::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  width: 4px;
+  height: 8px;
+  background: url(../img/news-arrow@2x.png) no-repeat center center/contain;
 }
 /*# sourceMappingURL=style.css.map */

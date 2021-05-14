@@ -325,6 +325,10 @@ img {
 
 .news__item {
   display: flex;
+
+  &:not(:first-child) {
+    border-top: 1px solid #707070;
+  }
 }
 
 .news__meta {
@@ -364,5 +368,28 @@ img {
   padding-left: 20px;
 
   a {
+  }
+}
+
+.news__more {
+  margin-top: 60px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: red;
+    font-weight: 700;
+    padding-right: 14px;
+    position: relative;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50px);
+    width: 4px;
+    height: 8px;
+    background: url(../img/news-arrow@2x.png) no-repeat center center / contain;
   }
 }
