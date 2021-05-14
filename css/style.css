@@ -369,7 +369,7 @@ img {
   position: relative;
 }
 
-.news__more::after {
+.news__more a::after {
   content: "";
   position: absolute;
   right: 0;

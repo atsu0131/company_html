@@ -380,16 +380,16 @@ img {
     font-weight: 700;
     padding-right: 14px;
     position: relative;
-  }
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50px);
-    width: 4px;
-    height: 8px;
-    background: url(../img/news-arrow@2x.png) no-repeat center center / contain;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translateY(-50px);
+      width: 4px;
+      height: 8px;
+      background: url(../img/news-arrow@2x.png) no-repeat center center / contain;
+    }
   }
 }
