@@ -12,7 +12,6 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  background-color: grey;
 }
 
 img {
@@ -185,6 +184,10 @@ img {
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
+.card {
+  background-color: grey;
+}
+
 .card__head {
   font-size: 48px;
   font-weight: 700;
@@ -286,5 +289,66 @@ img {
   .card__text {
     color: blue;
   }
+}
+
+.heading01 {
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 3px solid #3f5185;
+  padding: 0 0 4px;
+}
+
+.news {
+  padding: 100px 0 120px;
+  background: #fff;
+}
+
+.news__items {
+  margin-top: 80px;
+  width: 800px;
+  max-width: 100%;
+}
+
+.news__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news__date {
+  width: 105px;
+  padding-top: 3px;
+}
+
+.news__label a {
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  background: #666666;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news__label a.is-blue {
+  background: blue;
+}
+
+.news__label a.is-red {
+  background: red;
+}
+
+.news__title {
+  width: calc(100% - 180px);
+  padding-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
