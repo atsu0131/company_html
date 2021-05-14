@@ -304,7 +304,7 @@ img {
 }
 
 .news__items {
-  margin-top: 80px;
+  margin-top: 80px auto 0;
   width: 800px;
   max-width: 100%;
 }
@@ -313,6 +313,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px 0 12px;
 }
 
 .news__item:not(:first-child) {

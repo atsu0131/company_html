@@ -318,13 +318,14 @@ img {
 }
 
 .news__items {
-  margin-top: 80px;
+  margin-top: 80px auto 0;
   width: 800px;
   max-width: 100%;
 }
 
 .news__item {
   display: flex;
+  padding: 20px 0 12px;
 
   &:not(:first-child) {
     border-top: 1px solid #707070;
