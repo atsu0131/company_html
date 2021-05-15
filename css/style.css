@@ -381,4 +381,86 @@ img {
   height: 11px;
   background: url(../img/news-arrow@2x.png) no-repeat center center/contain;
 }
+
+.price__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+@media (max-width: 767px) {
+  .price__content {
+    display: block;
+  }
+}
+
+.price__image {
+  width: 37.83333%;
+}
+
+@media (max-width: 767px) {
+  .price__image {
+    width: 100%;
+    margin-top: 14px;
+  }
+}
+
+.price__table {
+  width: 59%;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .price__table {
+    width: 100%;
+    margin-top: 14px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #707070;
+  background: #fff;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table th,
+table td {
+  border: 1px solid #707070;
+  padding: 0 24px;
+  height: 58px;
+  vertical-align: middle;
+}
+
+table th {
+  background: #999999;
+  color: #fff;
+  text-align: center;
+}
+
+table th:nth-child(1) {
+  width: 172px;
+}
+
+@media (max-width: 767px) {
+  table th:nth-child(1) {
+    width: 112px;
+  }
+}
+
+table td {
+  text-align: right;
+}
+
+table strong {
+  color: red;
+  display: block;
+  line-height: 1;
+}
+
+table span {
+  font-size: 13px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -394,3 +394,80 @@ img {
     }
   }
 }
+.price {
+}
+
+.price__inner {
+}
+
+.price__head {
+}
+
+.section-title {
+}
+
+.price__content {
+  display: flex;
+  margin-top: 80px;
+
+  @include mq("sp") {
+    display: block;
+  }
+}
+
+.price__image {
+  width: 454/1200 * 100%;
+  @include mq("sp") {
+    width: 100%;
+    margin-top: 14px;
+  }
+
+  img {
+  }
+}
+
+.price__table {
+  width: (172+268+268)/1200 * 100%;
+  margin-left: auto;
+  @include mq("sp") {
+    width: 100%;
+    margin-top: 14px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #707070;
+  background: #fff;
+  width: 100%;
+  table-layout: fixed;
+  th,
+  td {
+    border: 1px solid #707070;
+    padding: 0 24px;
+    height: 58px;
+    vertical-align: middle;
+  }
+  th {
+    background: #999999;
+    color: #fff;
+    text-align: center;
+    &:nth-child(1) {
+      width: 172px;
+      @include mq("sp") {
+        width: 112px;
+      }
+    }
+  }
+  td {
+    text-align: right;
+  }
+  strong {
+    color: red;
+    display: block;
+    line-height: 1;
+  }
+  span {
+    font-size: 13px;
+  }
+}
