@@ -463,4 +463,222 @@ table strong {
 table span {
   font-size: 13px;
 }
+
+.contact {
+  background: grey;
+}
+
+.contact__form {
+  margin-top: 80px auto 0;
+  width: 800px;
+  background: #fff;
+  padding: 60px;
+}
+
+.contact-form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-form__row:not(:first-child) {
+  margin-top: 60px;
+}
+
+.contact-form__label {
+  width: 160px;
+  display: inline-block;
+}
+
+.contact-form__label label {
+  font-weight: 700;
+}
+
+.contact-form__label label.is-required {
+  display: inline-block;
+  position: relative;
+}
+
+.contact-form__label label.is-required::after {
+  content: "必須";
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: red;
+  text-align: center;
+  border-radius: 4px;
+  padding: 3px 8px;
+  line-height: 1;
+}
+
+.contach-form__input {
+  width: calc(100% - 160px);
+}
+
+.contach-form__input [type="text"] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #707070;
+  background: #fff;
+  padding: 10px 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contach-form__input [type="email"] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #707070;
+  background: #fff;
+  padding: 10px 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-form__radio {
+  margin-top: 62px;
+}
+
+.contact-form__radio [type="radio"] {
+  display: none;
+}
+
+.contact-form__radio span {
+  display: inline-block;
+  padding-left: 26px;
+  position: relative;
+  margin-left: 35px;
+}
+
+.contact-form__radio span::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #707070;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #fff;
+  border-radius: 50%;
+}
+
+.contact-form__radio span::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #3f51b5;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  display: none;
+}
+
+.contact-form__radio [type="radio"]:checked + span::after {
+  display: block;
+}
+
+.contact-form__check {
+  margin-top: 62px;
+  text-align: center;
+}
+
+.contact-form__check [type="checkbox"] {
+  display: none;
+}
+
+.contact-form__check span {
+  display: inline-block;
+  padding-left: 49px;
+  position: relative;
+}
+
+.contact-form__check span::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: 1px solid #707070;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contact-form__check span::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: 1px solid #707070;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: transparent url(../img/checkbox.png) no-repeat center center/contain;
+  display: none;
+}
+
+.contact-form__check span [type="checkbox"]:checked + span::after {
+  display: block;
+}
+
+.contact-form__button {
+  margin-top: 62px;
+  text-align: center;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #707070;
+  padding: 10px 16px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  background: #fff url(../img/news-arrow.png) no-repeat right 12px center/17px;
+}
+
+textarea {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #707070;
+  background: #fff;
+  padding: 10px 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  resize: none;
+}
 /*# sourceMappingURL=style.css.map */
