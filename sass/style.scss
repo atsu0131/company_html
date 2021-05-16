@@ -633,10 +633,10 @@ table {
       background: transparent url(../img/checkbox.png) no-repeat center center / contain;
       display: none;
     }
-    [type="checkbox"]:checked + span {
-      &::after {
-        display: block;
-      }
+  }
+  [type="checkbox"]:checked + span {
+    &::after {
+      display: block;
     }
   }
 }

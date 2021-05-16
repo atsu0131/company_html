@@ -640,7 +640,7 @@ table span {
   display: none;
 }
 
-.contact-form__check span [type="checkbox"]:checked + span::after {
+.contact-form__check [type="checkbox"]:checked + span::after {
   display: block;
 }
 
