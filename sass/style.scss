@@ -680,8 +680,16 @@ textarea {
   height: 40px;
   margin-top: -20px;
   background: transparent url(../img/arrow-next.png) no-repeat center center / contain;
+  right: calc(50% - #{$layout-width-inner}/ 2);
   &::after {
     display: none;
+  }
+
+  @include mq("tab") {
+    right: 10px;
+  }
+  @include mq("sp") {
+    right: 10px;
   }
 }
 
@@ -690,7 +698,30 @@ textarea {
   height: 40px;
   margin-top: -20px;
   background: transparent url(../img/arrow-prev.png) no-repeat center center / contain;
+  left: calc(50% - #{$layout-width-inner}/ 2);
   &::after {
     display: none;
   }
+  @include mq("tab") {
+    left: 10px;
+  }
+  @include mq("sp") {
+    left: 10px;
+  }
+}
+
+.swiper-pagination-bullet {
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2f7dc8;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 8px;
+  margin-right: 8px;
 }

@@ -687,10 +687,23 @@ textarea {
   height: 40px;
   margin-top: -20px;
   background: transparent url(../img/arrow-next.png) no-repeat center center/contain;
+  right: calc(50% - 1200px/ 2);
 }
 
 .swiper-button-next::after {
   display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .swiper-button-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-button-next {
+    right: 10px;
+  }
 }
 
 .swiper-button-prev {
@@ -698,9 +711,38 @@ textarea {
   height: 40px;
   margin-top: -20px;
   background: transparent url(../img/arrow-prev.png) no-repeat center center/contain;
+  left: calc(50% - 1200px/ 2);
 }
 
 .swiper-button-prev::after {
   display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .swiper-button-prev {
+    left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-button-prev {
+    left: 10px;
+  }
+}
+
+.swiper-pagination-bullet {
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2f7dc8;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- head内でanimate.cssを読み込む -->
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -71,7 +73,7 @@
     <div class="card__inner inner">
       <div class="card__head">Card</div>
       <div class="card__items">
-        <div class="card__item">
+        <div class="card__item wow slideInLeft">
           <div class="card__img"><img src="img/card-img.png" alt=""></div>
           <div class="card__title">タイトルタイトル</div>
           <div class="card__text">テキストテキストテキストテキストテキストテキスト</div>
@@ -260,6 +262,11 @@
     </div>
   </section>
 
+  <!-- wow.min.jsを読み込んでから、初期設定しておく -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
