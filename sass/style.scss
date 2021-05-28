@@ -725,3 +725,84 @@ textarea {
   margin-left: 8px;
   margin-right: 8px;
 }
+
+.footer {
+  background: linear-gradient(to bottom, #666666, #333333);
+  padding: 60px 0 24px;
+  color: #fff;
+}
+
+.footer__inner {
+}
+
+.footer__content {
+  display: flex;
+}
+
+.footer__left {
+  width: 36%;
+}
+
+.footer__logo {
+  a {
+  }
+
+  img {
+  }
+}
+
+.footer__address {
+}
+
+.footer__tel {
+}
+
+.footer__center {
+  width: 48%;
+  li {
+    a {
+    }
+  }
+}
+
+.footer__nav {
+  li {
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    img {
+      width: 30px;
+    }
+  }
+}
+
+.footer__right {
+  width: 16%;
+}
+
+.footer__sns {
+  &:not(:first-child) {
+    margin-left: 16px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  img {
+    width: 30px;
+  }
+}
+
+.footer__copy {
+}
+
+.to-top {
+  a {
+    img {
+    }
+  }
+}
